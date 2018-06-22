@@ -1,5 +1,5 @@
 /*
-** malloc2d.c for Game_of_ants in /Users/habi_a/Documents
+** malloc2d.c for libmy in /Users/habi_a/Documents
 ** 
 ** Made by HABI Açal
 ** Login   <habi_a@etna-alternance.net>

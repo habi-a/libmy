@@ -1,5 +1,5 @@
 /*
-** my_isalnum.c for Game_of_ants in /Users/habi_a/Documents
+** my_isalnum.c for libmy in /Users/habi_a/Documents
 **
 ** Made by HABI Açal
 ** Login   <habi_a@etna-alternance.net>
@@ -8,7 +8,7 @@
 ** Last update Fri Apr  6 10:01:33 2018 HABI Açal
 */
 
-int	my_isalnum(const char c)
+unsigned int	my_isalnum(const char c)
 {
     if (c >= 48 && c <= 57)
         return (1);

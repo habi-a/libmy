@@ -1,5 +1,5 @@
 /*
-** my_strlen.c for Game_of_ants in /Users/habi_a/Documents
+** my_strlen.c for libmy in /Users/habi_a/Documents
 ** 
 ** Made by HABI Açal
 ** Login   <habi_a@etna-alternance.net>
@@ -8,14 +8,12 @@
 ** Last update Fri Apr  6 10:02:41 2018 HABI Açal
 */
 
-int	my_strlen(const char *str)
+unsigned int		my_strlen(const char *str)
 {
-    int	i;
+    unsigned int	i;
 
     i = 0;
-    while (*(str + i) != '\0')
-    {
+    while (str[i])
         ++i;
-    }
     return (i);
 }

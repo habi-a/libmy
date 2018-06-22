@@ -1,5 +1,5 @@
 /*
-** my_putnbr.c for Game_of_ants in /Users/habi_a/Documents
+** my_putnbr.c for libmy in /Users/habi_a/Documents
 ** 
 ** Made by HABI Açal
 ** Login   <habi_a@etna-alternance.net>
@@ -9,7 +9,7 @@
 */
 #include "my.h"
 
-void			my_put_un_nbr(unsigned int n)
+static void		my_put_un_nbr(const unsigned int n)
 {
     int			i;
     unsigned int	divisible;
@@ -17,9 +17,7 @@ void			my_put_un_nbr(unsigned int n)
     divisible = n / 10;
     i = n % 10;
     if (divisible != 0)
-    {
         my_put_un_nbr(divisible);
-    }
     my_putchar((char)i + (char)'0');
 }
 

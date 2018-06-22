@@ -1,5 +1,5 @@
 /*
-** my_getnbr.c for Game_of_ants in /Users/habi_a/Documents
+** my_getnbr.c for libmy in /Users/habi_a/Documents
 ** 
 ** Made by HABI Açal
 ** Login   <habi_a@etna-alternance.net>
@@ -8,10 +8,10 @@
 ** Last update Fri Apr  6 10:00:28 2018 HABI Açal
 */
 
-int	my_getsigne(const char *str, int *pointeur)
+static int		my_getsigne(const char *str, unsigned int *pointeur)
 {
-    int	pos_neg;
-    int	k;
+    int			pos_neg;
+    unsigned int	k;
 
     k = 0;
     pos_neg = 1;
@@ -27,16 +27,16 @@ int	my_getsigne(const char *str, int *pointeur)
     return (pos_neg);
 }
 
-int	my_getnbr(const char *str)
+int			my_getnbr(const char *str)
 {
-    int	signe;
-    int	n;
-    int	i;
+    int			signe;
+    unsigned int       	n;
+    unsigned int	i;
 
     i = 0;
     n = 0;
     signe = my_getsigne(str, &i);
-    while (str[i] != '\0')
+    while (str[i])
     {
         if (str[i] >= '0' && str[i] <= '9')
         {
@@ -46,9 +46,7 @@ int	my_getnbr(const char *str)
             ++i;
         }
         else
-        {
             return (n * signe);
-        }
     }
     return (n * signe);
 }

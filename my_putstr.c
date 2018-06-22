@@ -1,5 +1,5 @@
 /*
-** my_putstr.c for Game_of_ants in /Users/habi_a/Documents
+** my_putstr.c for libmy in /Users/habi_a/Documents
 ** 
 ** Made by HABI Açal
 ** Login   <habi_a@etna-alternance.net>
@@ -14,7 +14,7 @@ void			my_putstr(const char *str)
     unsigned int	i;
 
     i = 0;
-    while (str[i] != '\0')
+    while (str[i])
     {
         my_putchar(str[i]);
         i++;

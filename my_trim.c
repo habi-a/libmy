@@ -1,5 +1,5 @@
 /*
-** my_trim.c for Game_of_ants in /Users/habi_a/Documents
+** my_trim.c for libmy in /Users/habi_a/Documents
 ** 
 ** Made by HABI Açal
 ** Login   <habi_a@etna-alternance.net>
@@ -10,11 +10,11 @@
 #include <stdlib.h>
 #include "my.h"
 
-char		*my_trim(char *str)
+char			*my_trim(const char *str)
 {
-    int		offset1;
-    int		offset2;
-    char	*res;
+    unsigned int	offset1;
+    unsigned int	offset2;
+    char		*res;
 
     offset1 = 0;
     offset2 = 0;
@@ -27,6 +27,6 @@ char		*my_trim(char *str)
             res[(offset2++)] = str[offset1];
         offset1++;
     }
-    res[offset2] = 0;
+    res[offset2] = '\0';
     return (res);
 }
