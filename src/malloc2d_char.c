@@ -8,9 +8,8 @@
 ** Last update Fri Apr  6 09:59:37 2018 HABI Açal
 */
 #include <stdlib.h>
-#include "my.h"
 
-void			fill2d(char **array2d, unsigned int row,
+static void		fill2d_char(char **array2d, unsigned int row,
 			       unsigned int column)
 {
     unsigned int	i;
@@ -29,7 +28,7 @@ void			fill2d(char **array2d, unsigned int row,
     }
 }
 
-char			**malloc2d(unsigned int row, unsigned int column)
+char			**malloc2d_char(unsigned int row, unsigned int column)
 {
     char		**array2d;
     unsigned int	i;
@@ -45,11 +44,11 @@ char			**malloc2d(unsigned int row, unsigned int column)
             return (NULL);
         i++;
     }
-    fill2d(array2d, row, column);
+    fill2d_char(array2d, row, column);
     return (array2d);
 }
 
-void			free2d(char **array2d, unsigned int row)
+void			free2d_char(char **array2d, unsigned int row)
 {
     unsigned int	i;
 
