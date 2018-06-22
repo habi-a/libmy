@@ -1,14 +1,33 @@
 /*
 ** malloc2d.c for libmy in /Users/habi_a/Documents
-** 
+**
 ** Made by HABI Açal
 ** Login   <habi_a@etna-alternance.net>
-** 
+**
 ** Started on  Fri Apr  6 09:59:05 2018 HABI Açal
 ** Last update Fri Apr  6 09:59:37 2018 HABI Açal
 */
 #include <stdlib.h>
 #include "my.h"
+
+void			fill2d(char **array2d, unsigned int row,
+			       unsigned int column)
+{
+    unsigned int	i;
+    unsigned int	j;
+
+    i = 0;
+    while (i < row)
+    {
+        j = 0;
+        while (j < column)
+        {
+            array2d[i][j] = '\0';
+            j++;
+        }
+        i++;
+    }
+}
 
 char			**malloc2d(unsigned int row, unsigned int column)
 {
@@ -28,25 +47,6 @@ char			**malloc2d(unsigned int row, unsigned int column)
     }
     fill2d(array2d, row, column);
     return (array2d);
-}
-
-void			fill2d(char **array2d, unsigned int row,
-			       unsigned int column)
-{
-    unsigned int	i;
-    unsigned int	j;
-
-    i = 0;
-    while (i < row)
-    {
-        j = 0;
-        while (j < column)
-        {
-            array2d[i][j] = '\0';
-            j++;
-        }
-        i++;
-    }
 }
 
 void			free2d(char **array2d, unsigned int row)
