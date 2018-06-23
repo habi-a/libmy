@@ -7,7 +7,7 @@
 ** Started on  Fri Apr  6 10:02:16 2018 HABI Açal
 ** Last update Fri Apr  6 10:02:21 2018 HABI Açal
 */
-#include "my.h"
+#include <my.h>
 
 void			my_putstr(const char *str)
 {

@@ -7,7 +7,7 @@
 ** Started on  Fri Apr  6 10:01:48 2018 HABI Açal
 ** Last update Fri Apr  6 10:01:55 2018 HABI Açal
 */
-#include "my.h"
+#include <my.h>
 
 static void		my_put_un_nbr(const unsigned int n)
 {

@@ -8,6 +8,7 @@
 ** Last update Fri Apr  6 10:03:04 2018 HABI Açal
 */
 #include <stdlib.h>
+#include <my.h>
 
 char			*my_trim(const char *str)
 {
