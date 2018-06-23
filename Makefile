@@ -8,6 +8,7 @@ SRC		= src/malloc2d_char.c \
 		src/my_putchar.c \
 		src/my_putnbr.c \
 		src/my_putstr.c \
+		src/my_strcat.c \
 		src/my_strcmp.c \
 		src/my_strlen.c \
 		src/my_trim.c

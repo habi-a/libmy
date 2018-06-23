@@ -21,7 +21,7 @@ static void		my_put_un_nbr(const unsigned int n)
     my_putchar((char)i + (char)'0');
 }
 
-void			my_put_nbr(int n)
+void			my_putnbr(int n)
 {
     if (n < 0)
     {
