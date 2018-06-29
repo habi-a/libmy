@@ -1,9 +1,8 @@
-CC		= gcc
-CFLAGS		+= -Wall -Wextra -Wpedantic -Werror
-CFLAGS		+= -I ./inc
+CC	=	gcc
+CFLAGS	+=	-Wall -Wextra -Wpedantic -Werror
+CFLAGS	+=	-I ./inc
 
-SRC		= src/malloc2d_char.c \
-		src/my_getnbr.c \
+SRC	=	src/my_getnbr.c \
 		src/my_isalnum.c \
 		src/my_putchar.c \
 		src/my_putnbr.c \
@@ -15,13 +14,13 @@ SRC		= src/malloc2d_char.c \
 		src/my_strlen.c \
 		src/my_trim.c
 
-OBJ		= $(SRC:.c=.o)
+OBJ	= 	$(SRC:.c=.o)
 
-NAME		= libmy
-NAME_STC	= $(NAME).a
-NAME_DYN	= $(NAME).so
+NAME	= 	libmy
+NAME_STC= 	$(NAME).a
+NAME_DYN= 	$(NAME).so
 
-RM		= rm -f
+RM	= 	rm -f
 
 all:		$(NAME_STC) $(NAME_DYN)
 
@@ -40,4 +39,4 @@ fclean: 	clean
 
 re:		fclean all
 
-.PHONY		= all $(NAME_STC) $(NAME_DYN) clean fclean re
+.PHONY	= 	all $(NAME_STC) $(NAME_DYN) clean fclean re
