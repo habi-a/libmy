@@ -9,6 +9,7 @@ typedef enum e_bool
 
 int		my_getnbr(const char *str);
 unsigned int	my_isalnum(char c);
+char my_lowcase(char c);
 void		my_putchar(char c);
 void		my_putnbr(int n);
 void		my_putstr(const char *str);
