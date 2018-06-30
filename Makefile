@@ -1,6 +1,7 @@
 CC	=	gcc
 CFLAGS	+=	-Wall -Wextra -Wpedantic -Werror
 CFLAGS	+=	-I ./inc
+CFLAGS	+=	-fPIC
 
 SRC	=	src/my_getnbr.c \
 		src/my_isalnum.c \
