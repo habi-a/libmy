@@ -5,10 +5,11 @@ CFLAGS	+=	-fPIC
 
 SRC	=	src/my_getnbr.c \
 		src/my_isalnum.c \
-		src/my_lowercase.c \
+		src/my_lowcase.c \
 		src/my_putchar.c \
 		src/my_putnbr.c \
 		src/my_putstr.c \
+		src/my_sort_str_tab.c \
 		src/my_strcat.c \
 		src/my_strcmp.c \
 		src/my_strcpy.c \
