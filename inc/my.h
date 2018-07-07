@@ -13,6 +13,7 @@ char my_lowcase(char c);
 void		my_putchar(char c);
 void		my_putnbr(int n);
 void		my_putstr(const char *str);
+void my_revert_tab(char **tab, unsigned n);
 void my_sort_str_tab(char **tab, unsigned int size);
 void my_sort_rev_str_tab(char **tab, unsigned int size);
 char		*my_strcat(char *dest, const char *src);
