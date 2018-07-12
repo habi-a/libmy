@@ -7,7 +7,6 @@
 ** Started on  Fri Apr  6 10:01:31 2018 HABI Açal
 ** Last update Fri Apr  6 10:01:33 2018 HABI Açal
 */
-
 unsigned int	my_isalnum(const char c)
 {
     if (c >= 48 && c <= 57)

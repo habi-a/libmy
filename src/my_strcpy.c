@@ -1,3 +1,12 @@
+/*
+** my_strcpy.c for libmy in /Users/habi_a/Documents
+**
+** Made by HABI Açal
+** Login   <habi_a@etna-alternance.net>
+**
+** Started on  Fri Apr  6 10:02:16 2018 HABI Açal
+** Last update Fri Apr  6 10:02:21 2018 HABI Açal
+*/
 char *my_strcpy(char *dest, const char *src)
 {
     unsigned int i;

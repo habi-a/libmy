@@ -1,3 +1,12 @@
+##
+## Makefile for libmy in /Users/habi_a/Documents
+## 
+## Made by HABI Açal
+## Login   <habi_a@etna-alternance.net>
+## 
+## Started on  Thu Jul 12 14:25:31 2018 HABI Açal
+## Last update Thu Jul 12 14:26:00 2018 HABI Açal
+##
 CC	=	gcc
 CFLAGS	+=	-Wall -Wextra -Wpedantic -Werror
 CFLAGS	+=	-I ./inc

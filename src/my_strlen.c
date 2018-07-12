@@ -7,7 +7,6 @@
 ** Started on  Fri Apr  6 10:02:33 2018 HABI Açal
 ** Last update Fri Apr  6 10:02:41 2018 HABI Açal
 */
-
 unsigned int		my_strlen(const char *str)
 {
     unsigned int	i;

@@ -7,7 +7,6 @@
 ** Started on  Fri Apr  6 09:59:59 2018 HABI Açal
 ** Last update Fri Apr  6 10:00:28 2018 HABI Açal
 */
-
 static int		my_getsigne(const char *str, unsigned int *pointeur)
 {
     int			pos_neg;
