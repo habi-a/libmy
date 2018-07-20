@@ -5,18 +5,20 @@
 ## Login   <habi_a@etna-alternance.net>
 ## 
 ## Started on  Thu Jul 12 14:25:31 2018 HABI Açal
-## Last update Thu Jul 12 14:26:00 2018 HABI Açal
+## Last update Mon Jul 16 11:29:50 2018 HABI Açal
 ##
 CC	=	gcc
 CFLAGS	+=	-Wall -Wextra -Wpedantic -Werror
-CFLAGS	+=	-I ./inc
 CFLAGS	+=	-fPIC
+CFLAGS	+=	-I ./inc
 
 SRC	=	src/my_getnbr.c \
 		src/my_isalnum.c \
 		src/my_lowcase.c \
+		src/my_nbrlen.c \
 		src/my_putchar.c \
 		src/my_putnbr.c \
+		src/my_putnbr_base.c \
 		src/my_putstr.c \
 		src/my_revert_tab.c \
 		src/my_sort_str_tab.c \
@@ -45,7 +47,7 @@ $(NAME_DYN): 	$(OBJ)
 	$(CC) -shared $(OBJ) $(CPPFLAGS) -o $(NAME_DYN)
 
 clean:
-	$(RM) $(OBJ)
+	$(RM) $(OBJ) *~ *#
 
 fclean: 	clean
 	$(RM) $(NAME_STC) $(NAME_DYN)

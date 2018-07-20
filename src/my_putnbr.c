@@ -9,7 +9,7 @@
 */
 #include <my.h>
 
-static void		my_put_un_nbr(const unsigned int n)
+void		my_put_un_nbr(const unsigned int n)
 {
     int			i;
     unsigned int	divisible;
