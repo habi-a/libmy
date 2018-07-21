@@ -1,5 +1,5 @@
 /*
-** my_nbrlen_base.c for libmy in /cygdrive/c/Users/Habi/Documents
+** my_nbrlen_base.c for libmy in /Users/habi_a/Documents
 **
 ** Made by HABI Açal
 ** Login   <habi_a@etna-alternance.net>
@@ -9,7 +9,8 @@
 */
 #include <my.h>
 
-void my_un_nbrlen_base(unsigned int n, const char *base, unsigned int *buffer)
+void			my_un_nbrlen_base(unsigned int n, const char *base,
+					  unsigned int *buffer)
 {
     unsigned int	i;
 
@@ -19,7 +20,8 @@ void my_un_nbrlen_base(unsigned int n, const char *base, unsigned int *buffer)
     *buffer = *buffer + 1;
 }
 
-void	my_nbrlen_base(int n, const char *base, unsigned int *buffer)
+void			my_nbrlen_base(int n, const char *base,
+				       unsigned int *buffer)
 {
     unsigned int	i;
 

@@ -20,7 +20,7 @@ int		my_getnbr(const char *str);
 unsigned int	my_isalnum(char c);
 char		my_lowcase(char c);
 unsigned int	my_nbrlen(int n);
-void	my_nbrlen_base(int n, const char *base, unsigned int *buffer);
+void		my_nbrlen_base(int n, const char *base, unsigned int *buffer);
 void		my_putchar(char c);
 void		my_putnbr(int n);
 void		my_putnbr_base(int n, const char *base);
@@ -40,15 +40,9 @@ char		*my_strrdup(char *str, unsigned int r);
 unsigned int	my_strlen(const char *str);
 char		*my_strcpy(char *dest, const char *src);
 char		*my_trim(const char *str);
-unsigned int my_un_nbrlen(unsigned int n);
-void my_un_nbrlen_base(unsigned int n, const char *base, unsigned int *buffer);
+unsigned int	my_un_nbrlen(unsigned int n);
+void		my_un_nbrlen_base(unsigned int n, const char *base,
+				  unsigned int *buffer);
 
+#endif		/* _MY_H * /
 
-#endif		/* _MY_H */
-
-
-
-
-  
-
-  
