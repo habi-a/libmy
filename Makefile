@@ -16,6 +16,7 @@ SRC	=	src/my_getnbr.c \
 		src/my_isalnum.c \
 		src/my_lowcase.c \
 		src/my_nbrlen.c \
+		src/my_nbrlen_base.c \
 		src/my_putchar.c \
 		src/my_putnbr.c \
 		src/my_putnbr_base.c \

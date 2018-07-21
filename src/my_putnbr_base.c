@@ -9,7 +9,7 @@
 */
 #include <my.h>
 
-void			my_put_un_nbr_base(unsigned int n, char *base)
+void			my_put_un_nbr_base(unsigned int n, const char *base)
 {
     unsigned int	i;
     unsigned int	j;
@@ -21,7 +21,7 @@ void			my_put_un_nbr_base(unsigned int n, char *base)
     my_putchar(base[j]);
 }
 
-void	my_putnbr_base(int n, char *base)
+void	my_putnbr_base(int n, const char *base)
 {
     int	i;
     int	j;
