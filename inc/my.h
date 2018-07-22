@@ -44,5 +44,4 @@ unsigned int	my_un_nbrlen(unsigned int n);
 void		my_un_nbrlen_base(unsigned int n, const char *base,
 				  unsigned int *buffer);
 
-#endif		/* _MY_H * /
-
+#endif		/* _MY_H */
