@@ -5,14 +5,14 @@
 ** Login   <habi_a@etna-alternance.net>
 **
 ** Started on  Tue Dec 26 13:18:38 2017 HABI Açal
-** Last update Sat Jan  6 22:34:59 2018 HABI Açal
+** Last update Tue Jul 24 09:51:36 2018 HABI Açal
 */
 #include <my.h>
 
 void			my_long_nbrlen_base(long n, const char *base,
                                   unsigned int *buffer)
 {
-    long	i;
+    long		i;
 
     if (n < 0)
     {

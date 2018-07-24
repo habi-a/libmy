@@ -5,14 +5,14 @@
 ** Login   <habi_a@etna-alternance.net>
 ** 
 ** Started on  Thu Jul 19 10:37:47 2018 HABI Açal
-** Last update Thu Jul 19 12:11:37 2018 HABI Açal
+** Last update Tue Jul 24 09:51:02 2018 HABI Açal
 */
 #include <my.h>
 
 void			my_put_long_nbr_base(long n, const char *base)
 {
-    long	i;
-    long	j;
+    long		i;
+    long		j;
 
     if (n < 0)
     {
@@ -38,10 +38,10 @@ void			my_put_un_nbr_base(unsigned int n, const char *base)
     my_putchar(base[j]);
 }
 
-void	my_putnbr_base(int n, const char *base)
+void			my_putnbr_base(int n, const char *base)
 {
-    int	i;
-    int	j;
+    int			i;
+    int			j;
 
     if (n < 0)
     {
