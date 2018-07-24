@@ -5,7 +5,7 @@
 ** Login   <habi_a@etna-alternance.net>
 ** 
 ** Started on  Thu Jul 12 14:28:06 2018 HABI Açal
-** Last update Thu Jul 19 12:13:11 2018 HABI Açal
+** Last update Mon Jul 23 17:37:39 2018 HABI Açal
 */
 #ifndef		_MY_H_
 # define	_MY_H_
@@ -18,12 +18,17 @@ typedef enum	e_bool
 
 int		my_getnbr(const char *str);
 unsigned int	my_isalnum(char c);
+void		my_long_nbrlen_base(long n, const char *base,
+				    unsigned int *buffer);
 char		my_lowcase(char c);
 unsigned int	my_nbrlen(int n);
 void		my_nbrlen_base(int n, const char *base, unsigned int *buffer);
 void		my_putchar(char c);
 void		my_putnbr(int n);
 void		my_putnbr_base(int n, const char *base);
+void		my_put_long_nbr(long n);
+void		my_put_long_nbr_base(long n, const char *base);
+void		my_put_un_long_nbr(unsigned long n);
 void		my_put_un_nbr(unsigned int n);
 void		my_put_un_nbr_base(unsigned int n, const char *base);
 void		my_putstr(const char *str);
