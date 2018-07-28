@@ -16,6 +16,8 @@ char			*my_trim(const char *str)
     unsigned int	offset2;
     char		*res;
 
+    if (str == NULL)
+        return (NULL);
     offset1 = 0;
     offset2 = 0;
     res = malloc(sizeof(char *) * (my_strlen(str) + 1));

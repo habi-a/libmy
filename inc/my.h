@@ -18,6 +18,7 @@ typedef enum	e_bool
 
 int		my_getnbr(const char *str);
 unsigned int	my_isalnum(char c);
+unsigned int	my_isprintable(char c);
 void		my_long_nbrlen_base(long n, const char *base,
 				    unsigned int *buffer);
 char		my_lowcase(char c);

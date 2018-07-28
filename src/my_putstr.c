@@ -8,12 +8,15 @@
 ** Last update Fri Apr  6 10:02:21 2018 HABI Açal
 */
 #include <my.h>
+#include <stdlib.h>
 
 void			my_putstr(const char *str)
 {
     unsigned int	i;
 
     i = 0;
+    if (str == NULL)
+        return ;
     while (str[i])
     {
         my_putchar(str[i]);

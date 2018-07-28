@@ -7,10 +7,14 @@
 ** Started on  Fri Apr  6 10:02:33 2018 HABI Açal
 ** Last update Fri Apr  6 10:02:41 2018 HABI Açal
 */
+#include <stdlib.h>
+
 unsigned int		my_strlen(const char *str)
 {
     unsigned int	i;
 
+    if (str == NULL)
+        return (0);
     i = 0;
     while (str[i])
         ++i;
