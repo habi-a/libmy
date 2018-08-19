@@ -46,7 +46,7 @@ $(NAME_STC): 	$(OBJ)
 	ranlib $(NAME_STC)
 
 $(NAME_DYN): 	$(OBJ)
-	$(CC) -shared $(OBJ) $(CPPFLAGS) -o $(NAME_DYN)
+	$(CC) -shared $(OBJ) $(CFLAGS) -o $(NAME_DYN)
 
 clean:
 	$(RM) $(OBJ) *~ *#
