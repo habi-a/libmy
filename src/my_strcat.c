@@ -10,20 +10,19 @@
 #include <my.h>
 #include <stdlib.h>
 
-char			*my_strcat(char *dest, const char *src)
+char                *my_strcat(char *dest, const char *src)
 {
-    unsigned int	i;
-    unsigned int	len;
+    unsigned int    i;
+    unsigned int    len;
 
     if (src == NULL || dest == NULL)
         return (NULL);
     i = 0;
     len = my_strlen(dest);
-    while (src[i])
-	{
+    while (src[i]) {
         dest[len + i] = src[i];
-		i++;
-	}
+        i++;
+    }
     dest[len + i] = '\0';
     return (dest);
 }

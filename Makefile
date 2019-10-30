@@ -1,16 +1,16 @@
 ##
 ## Makefile for libmy in /Users/habi_a/Documents
-## 
+##
 ## Made by HABI Açal
 ## Login   <habi_a@etna-alternance.net>
-## 
+##
 ## Started on  Thu Jul 12 14:25:31 2018 HABI Açal
 ## Last update Mon Jul 16 11:29:50 2018 HABI Açal
 ##
 CC	=	gcc
 CFLAGS	+=	-Wall -Wextra -Wpedantic -Werror
 CFLAGS	+=	-fPIC
-CFLAGS	+=	-I ./inc
+CFLAGS	+=	-I ./inc -I ./inc/my_printf
 
 SRC	=	src/my_getnbr.c \
 		src/my_isalnum.c \
@@ -18,6 +18,10 @@ SRC	=	src/my_getnbr.c \
 		src/my_lowcase.c \
 		src/my_nbrlen.c \
 		src/my_nbrlen_base.c \
+		src/my_printf/my_printf.c \
+		src/my_printf/my_put1.c \
+		src/my_printf/my_put2.c \
+		src/my_printf/my_put3.c \
 		src/my_putchar.c \
 		src/my_putnbr.c \
 		src/my_putnbr_base.c \

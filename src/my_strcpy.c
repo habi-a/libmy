@@ -9,15 +9,14 @@
 */
 #include <stdlib.h>
 
-char			*my_strcpy(char *dest, const char *src)
+char                *my_strcpy(char *dest, const char *src)
 {
-    unsigned int	i;
+    unsigned int    i;
 
     if (src == NULL || dest == NULL)
         return (NULL);
     i = 0;
-    while (src[i])
-    {
+    while (src[i]) {
         dest[i] = src[i];
         i++;
     }
@@ -25,15 +24,14 @@ char			*my_strcpy(char *dest, const char *src)
     return (dest);
 }
 
-char			*my_strncpy(char *dest, const char *src, unsigned int n)
+char                *my_strncpy(char *dest, const char *src, unsigned int n)
 {
-    unsigned int	i;
+    unsigned int    i;
 
     if (src == NULL || dest == NULL)
         return (NULL);
     i = 0;
-    while (src[i] && i < n)
-    {
+    while (src[i] && i < n) {
         dest[i] = src[i];
         i++;
     }
@@ -41,17 +39,16 @@ char			*my_strncpy(char *dest, const char *src, unsigned int n)
     return (dest);
 }
 
-char			*my_strrcpy(char *dest, const char *src, unsigned int r)
+char                *my_strrcpy(char *dest, const char *src, unsigned int r)
 {
-    unsigned int	i;
-    unsigned int	j;
+    unsigned int    i;
+    unsigned int    j;
 
     if (src == NULL || dest == NULL)
         return (NULL);
     i = 0;
     j = r;
-    while (src[j])
-    {
+    while (src[j]) {
         dest[i] = src[j];
         i++;
         j++;
