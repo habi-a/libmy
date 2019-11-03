@@ -17,6 +17,8 @@ void        my_put_nbr_float(float n)
 
     my_put_long_nbr_base(ent, "0123456789");
     my_putchar('.');
+    if (aff_dec < 0)
+        aff_dec *= (-1);
     my_put_long_nbr_base((long)aff_dec, "0123456789");
  }
 
@@ -28,5 +30,7 @@ void        my_put_nbr_float(float n)
 
      my_put_long_nbr_base(ent, "0123456789");
      my_putchar('.');
+     if (aff_dec < 0)
+         aff_dec *= (-1);
      my_put_long_nbr_base((long)aff_dec, "0123456789");
   }
