@@ -26,7 +26,9 @@ static const flags_t g_flags[] = {
     {'p', &my_put_p},
     {'b', &my_put_b},
     {'S', &my_put_S},
-    {'l', &my_put_l}
+    {'l', &my_put_l},
+    {'f', &my_put_f},
+    {'t', &my_put_t}
 };
 
 static flags_t      get_flag(char key)
@@ -54,8 +56,7 @@ int   my_printf(const char *format, ...)
     if (format == NULL)
         return (-1);
     va_start(variables, format);
-    while (format[i] != '\0')
-    {
+    while (format[i] != '\0') {
         if (format[i] == '%' && get_flag(format[i + 1]).key) {
             count = get_flag(format[i + 1]).p_my_put(variables, count);
             i++;
