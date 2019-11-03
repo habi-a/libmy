@@ -17,6 +17,7 @@ typedef enum    e_bool {
 
 int             my_getnbr(const char *str);
 long long       my_getnbrll(const char *str);
+float           my_getnbr_float(const char *str);
 unsigned int    my_isalnum(char c);
 unsigned int    my_isdigit(char c);
 unsigned int    my_isprintable(char c);
@@ -27,6 +28,7 @@ void            my_long_nbrlen_base(long n, const char *base,
 char            my_lowcase(char c);
 unsigned int    my_nbrlen(int n);
 void            my_nbrlen_base(int n, const char *base, unsigned int *buffer);
+int             my_pow(int nb, int pow);
 int             my_printf(const char *format, ...);
 void            my_putchar(char c);
 void            my_putnbr(int n);
