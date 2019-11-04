@@ -49,7 +49,7 @@ static char *reader(int fd, char *line, int i, int len)
     return (NULL);
 }
 
-char        *getline(int fd)
+char        *my_getline(int fd)
 {
     int     i = 1;
     int     len = 0;
